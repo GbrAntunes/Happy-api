@@ -56,7 +56,7 @@ export default {
       abortEarly: false,
     })
 
-    const orphanage = orphanagesRepository.create()
+    const orphanage = orphanagesRepository.create(data)
   
     await orphanagesRepository.save(orphanage)
   
